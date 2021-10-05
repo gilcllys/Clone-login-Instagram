@@ -1,0 +1,138 @@
+*{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 10px;
+    background-color:rgb(243,243,243);
+
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; 
+  width: 70%;
+  height: 50%;
+  margin: auto;
+  padding: 0px;
+  left: -5%;
+  top: -10%;
+  
+}
+main > img {
+    height: 70%;
+    width:70%;
+    padding: 0px;
+}
+
+div.bigBox{
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  left: -130px;
+  width: 170%;
+  height: 100%;
+}
+/***********************************/
+section.mediumBox{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 1px solid lightgray;
+
+  }
+  section.mediumBox >#logo{
+    padding: 10px;
+  } 
+#perfil{
+  height: 15%;
+  width: 15%;
+  margin: -10px 0 10px 0;
+}
+.btnContinue{
+  width: fit-content;
+  background-color: rgb(0,149,246);
+  color: white;
+  border: 1px white solid;
+  border-radius: 5px;
+  padding: 8px;
+}
+/*****************************************/
+.smallbox{
+  background-color: white;
+  border: 1px solid lightgray;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  }
+  .smallbox >p{
+    margin: 1px;
+    padding: 5px;
+  }
+  .link-azul {
+    color: #0095f6;
+}
+.nao-conta{
+    color: rgb(160, 160, 160);
+}
+
+/*****************************************/
+.botoes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.android,.apple{
+  width: 30%;
+  height: 30%;
+}
+/****************Responsividade*************************/
+
+@media (max-width: 1024px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    main {
+      width: 40%;
+      left: 12.5%;
+      top: 100px;
+    }
+
+    main >img {
+        display: none;
+    }
+
+    .bigBox {
+      position: absolute;
+      width: 10px;
+    }
+    
+  .smallbox{
+      border: 1px solid transparent;
+    }
+
+  section.mediumBox{
+      border: 1px solid transparent;
+  }
+
+}
